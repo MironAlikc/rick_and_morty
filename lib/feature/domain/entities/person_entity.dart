@@ -13,7 +13,7 @@ class PersonEntity extends Equatable {
   final List<String>? episode;
   final DateTime? created;
 
-  PersonEntity({
+  const PersonEntity({
     required this.id,
     required this.name,
     required this.status,
@@ -44,6 +44,6 @@ class PersonEntity extends Equatable {
 
 class LocationEntity {
   final String? name;
-  final String? uri;
-  LocationEntity({this.name, this.uri});
+  final String? url;
+  LocationEntity({this.name, this.url});
 }
